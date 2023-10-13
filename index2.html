@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .card {
+        width: 380px;
+        height: 300px;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 8px solid blue;
+        position: relative;
+    }
+
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .card-body {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: -100%;
+        position: absolute;
+        background: #D8D8D838;
+        backdrop-filter: blur(5px);
+        border-radius: 15px;
+        color: rgb(0, 0, 0);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 1s;
+    }
+
+    .card-body h1 {
+       text-transform: uppercase; 
+       font-size: 40px;
+    }
+    .card-body p {
+        font-size: 16px;
+        line-height: 25px;
+        margin: 20px 0px;
+    }
+    .card-body button {
+        color: blue;
+        padding: 10px 20px;
+        background: #8fabba;
+        border: none;
+        width: 120px;
+        outline: none;
+        cursor: pointer;
+
+    }
+    .card:hover .card-body {
+        right: 0%;
+    }
+
+</style>
+<body>
+    <div class="card">
+        <img src="/1.png" alt="">
+        <div class="card-body">
+            <h1>Web Design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam cupiditate ab mollitia sunt molestias vero quasi harum eum, iste totam, eos, unde necessitatibus?</p>
+            <button>Read More</button>
+        </div>
+    </div>
+</body>
+</html>
