@@ -203,6 +203,20 @@ header.shadow {
   margin: 1rem 0 1.4rem;
 }
 
+.experience span {
+  color: rgb(2, 166, 70);
+}
+
+.home-text .text-color {
+  color: rgb(2, 166, 70);
+  font-size: var(--big-font);
+}
+.experience h4 {
+  /* color: rgb(2, 166, 70);; */
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
 .information .info-box {
   display: flex;
   align-items: center;
@@ -283,11 +297,11 @@ span {
 }
 
 .c-bar {
-  width: 90%;
+  width: 100%;
 }
 
 .cpp-bar {
-  width: 80%;
+  width: 100%;
 }
 
 .java-bar {
@@ -494,6 +508,7 @@ form textarea {
 .coding-box img{
   width: 100%;
   /* border-radius: 20px; */
+  border-radius: 30px;
   margin-bottom: 10px;
 }
 .coding-box a{
@@ -503,6 +518,9 @@ form textarea {
 }
 .coding-box a:hover{
   color: #8b8a8f;
+}
+.coding-box:hover{
+  box-shadow: 0 2px 7px rgba(52, 119, 118, 0.75);
 }
 
 
@@ -619,6 +637,15 @@ form textarea {
   .contact-button {
     margin-left: 25%;
   }
+
+  .coding-main {
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+  }
+  .coding-box {
+    
+    margin: 20px 30px;
+}
 }
 
 @media (max-width: 340px) {
