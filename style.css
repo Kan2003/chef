@@ -186,13 +186,17 @@ header.shadow {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-top: 2rem;
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 
 .about-img img {
   width: 80%;
   border-radius: 0.5rem;
 }
-
+.about-text {
+  flex-wrap: wrap;
+}
 .about-text p {
   font-size: var(--p-font);
   font-weight: 400;
@@ -207,10 +211,6 @@ header.shadow {
   color: rgb(2, 166, 70);
 }
 
-.home-text .text-color {
-  color: rgb(2, 166, 70);
-  font-size: var(--big-font);
-}
 .experience h4 {
   /* color: rgb(2, 166, 70);; */
   font-weight: 600;
