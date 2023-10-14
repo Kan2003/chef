@@ -605,7 +605,7 @@ form textarea {
 
   .home-img {
     order: initial;
-
+    margin-top: 64px;
   }
 
   .about-container {
@@ -664,10 +664,7 @@ form textarea {
     font-weight: 500;
   }
 
-  .home-img {
-    margin-top: 64px;
-    
-  }
+  
 
   .information .info-box span {
     font-size: 1rem;
