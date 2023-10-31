@@ -678,3 +678,37 @@ form textarea {
     margin-left: 25%;
   }
 }
+
+
+#box1 {
+  background: #575555;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+}
+
+#loader {
+  /* background: #000; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+ 
+  width: 50px;
+  height: 50px;
+  border: 5px solid grey;
+  border-radius: 50%;
+  border-top-color: aqua;
+  animation: rotate 1s infinite; 
+  /* z-index: 151; */
+}
+@keyframes rotate {
+  100%{
+    rotate: 360deg;
+  }
+  
+}
+
+#main {
+  display: none;
+}

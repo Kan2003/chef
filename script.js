@@ -42,5 +42,13 @@ function night(){
 night();
 
 
+var loader = document.querySelector("#box1")
+var main = document.querySelector("#main")
+window.addEventListener("load",function(){
+    loader.style.display = "none"
+    main.style.display = "block"
+    
+})
+
 
                                     
