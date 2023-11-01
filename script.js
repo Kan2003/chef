@@ -14,6 +14,16 @@ function init(){
           ease: "cubic-bezier(0.23, 1, 0.320, 1)",
           duration: 1,
         });
+
+        var topload = document.querySelector("#top-load")
+
+        function update() {
+          topload.style.width = `${((window.scrollY) /(document.body.scrollHeight - window.innerHeight)*100)}%`
+            requestAnimationFrame(update);
+        }
+
+        update();
+
   }
   else{
     console.log("no")
