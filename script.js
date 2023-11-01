@@ -1,12 +1,24 @@
-Shery.mouseFollower();
-Shery.makeMagnet(".magnet");
-Shery.imageMasker(".home-img img" , {
-  mouseFollower: true,
-  text: "Kanha",
-  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-  duration: 1,
-});
 
+
+
+document.addEventListener("DOMContentLoaded",init);
+
+function init(){
+  let query = window.matchMedia("(min-width :600px)");
+  if(query.matches){
+        Shery.mouseFollower();
+        Shery.makeMagnet(".magnet");
+        Shery.imageMasker(".home-img img" , {
+          mouseFollower: true,
+          text: "Kanha",
+          ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+          duration: 1,
+        });
+  }
+  else{
+    console.log("no")
+  }
+}
 
 
 function night(){
