@@ -64,10 +64,12 @@ function night(){
 night();
 
 
-var loader = document.querySelector("#box1")
+var box1 = document.querySelector("#box1")
+var loader = document.querySelector("#loader")
 var main = document.querySelector("#main")
 window.addEventListener("load",function(){
-    loader.style.display = "none"
+  loader.style.display = "none",
+  box1.style.height = "0vh",
     main.style.display = "block"
     
 })
